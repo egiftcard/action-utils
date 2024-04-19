@@ -7,6 +7,10 @@ module.exports = {
     {
       files: ['*.ts'],
       extends: ['@egiftcard/eslint-config-typescript'],
+      rules: {
+        'no-shadow': 'off',
+        '@typescript-eslint/no-shadow': ['error', { builtinGlobals: true }],
+      },
     },
 
     {
@@ -18,33 +22,13 @@ module.exports = {
     },
 
     {
-      files: ['yarn.config.cjs'],
-      parserOptions: {
-        sourceType: 'script',
-        ecmaVersion: 2020,
-      },
-      settings: {
-        jsdoc: {
-          mode: 'typescript',
-        },
-      },
-      extends: ['@egiftcard/eslint-config-nodejs'],
-    },
-
-    {
       files: ['*.test.ts', '*.test.js'],
-      extends: [
-        '@egiftcard/eslint-config-jest',
-        '@egiftcard/eslint-config-nodejs',
-      ],
+      extends: ['@egiftcard/eslint-config-jest'],
+      rules: {
+        'import/unambiguous': 'off',
+      },
     },
   ],
 
-  ignorePatterns: [
-    '!.eslintrc.js',
-    '!.prettierrc.js',
-    'dist/',
-    'docs/',
-    '.yarn/',
-  ],
+  ignorePatterns: ['!.eslintrc.js', '!.prettierrc.js', 'dist/'],
 };
