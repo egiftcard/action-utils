@@ -37,11 +37,11 @@
     "semver": "^7.3.5"
   },
   "devDependencies": {
-    "@lavamoat/allow-scripts": "^1.0.5",
     "@egiftcard/eslint-config": "^12.2.0",
     "@egiftcard/eslint-config-jest": "^12.1.0",
     "@egiftcard/eslint-config-nodejs": "^12.1.0",
     "@egiftcard/eslint-config-typescript": "^12.1.0",
+    "@lavamoat/allow-scripts": "^1.0.5",
     "@types/glob": "^7.1.3",
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
@@ -50,6 +50,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^24.3.4",
+    "eslint-plugin-n": "^17.2.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "jest": "^26.4.2",
